@@ -34,14 +34,6 @@ class HomePage extends StatelessWidget {
         Divider(),
 
         BuildRowSection(
-          products: ProductRepository.all(limit: 7),
-          showMore: true,
-          title: 'All Product',
-        ),
-        SizedBox(height: 24),
-        Divider(),
-
-        BuildRowSection(
           title: 'Comics',
           products: ProductRepository.byCategory(
             ProductCategory.manga,
