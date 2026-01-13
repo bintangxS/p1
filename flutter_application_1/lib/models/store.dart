@@ -25,8 +25,11 @@ final List<Store> stores = [
     storeName: 'Bstore',
     storeImage: 'assets/img/logowxs.png',
     bannerImage: 'assets/img/logowxs.png',
-    storeBio:
-        'fduighiusdfhgarioyhrgkurhgbuerhgukrhguierghfoughsukwrhufgbejkfgsbiufgte97tgeiorfyhoilgrfoaugfaehgfuljagfaejt;entklgwuoh',
+    storeBio: '''
+  'A cozy store for book lovers. From popular titles to hidden gems, we carefully pick products you’ll enjoy.
+  'Highly rated store offering premium selections with consistent quality and reliable service. Customer satisfaction is our priority.
+
+''',
     rating: 4.9,
   ),
   Store(

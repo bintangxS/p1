@@ -32,40 +32,39 @@ class OneRowProductCard extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Column(
-                    children: [
-                      Image.asset(
-                        product.coverImage,
-                        width: 80,
-                        height: 100,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
+                  Image.asset(
+                    product.coverImage,
+                    width: 80,
+                    height: 100,
+                    fit: BoxFit.cover,
                   ),
-                  SizedBox(width: 20),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        product.title,
-                        style: TextStyle(fontSize: 26),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      Text(
-                        store.storeName,
-                        style: TextStyle(fontSize: 16),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                      Text(
-                        product.price.toString(),
-                        style: TextStyle(fontSize: 14),
-                      ),
-                    ],
+                  const SizedBox(width: 20),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          product.title,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 20),
+                        ),
+                        Text(
+                          store.storeName,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 16),
+                        ),
+                        Text(
+                          '\$ ${product.price.toString()}',
+                          style: const TextStyle(fontSize: 14),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
+
               Row(
                 //mainAxisAlignment: MainAxisAlignment.end,
                 children: [

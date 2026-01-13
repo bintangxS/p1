@@ -124,6 +124,17 @@ class _ProductSearchPageState extends State<ProductSearchPage> {
                     .skip(offset)
                     .take(limit)
                     .toList();
+                if (products.isEmpty) {
+                  return const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 40),
+                    child: Center(
+                      child: Text(
+                        "There's no product",
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
+                  );
+                }
 
                 return Column(
                   children: [

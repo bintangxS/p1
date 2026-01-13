@@ -133,34 +133,24 @@ class _ProductDescPageState extends State<ProductDescPage> {
                   Row(
                     children: [
                       Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Price'),
-                            RichText(
-                              text: TextSpan(
-                                style: DefaultTextStyle.of(context).style
-                                    .copyWith(decoration: TextDecoration.none),
-                                children: [
-                                  TextSpan(
-                                    text: '\$',
-                                    style: TextStyle(fontSize: 18),
-                                  ),
-                                  WidgetSpan(child: SizedBox(width: 2)),
-                                  TextSpan(
-                                    text: product.price.toString(),
-                                    style: TextStyle(
-                                      fontSize: 24,
-                                      letterSpacing: -2,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                            Text('Price: ', style: TextStyle(fontSize: 24)),
+                            Text(
+                              '\$ ${product.price.toString()}',
+                              style: TextStyle(fontSize: 24, color: Colors.red),
                             ),
                           ],
                         ),
                       ),
+                      Spacer(),
                       Container(width: 1, height: 50, color: Colors.amber),
+                      SizedBox(width: 20),
+                      Text(
+                        'stock: ${product.stock}',
+                        style: TextStyle(fontSize: 24),
+                      ),
                       SizedBox(width: 15),
                       Expanded(
                         child: Column(
