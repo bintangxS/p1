@@ -54,6 +54,16 @@ class HomePage extends StatelessWidget {
         ),
         SizedBox(height: 24),
         Divider(),
+
+        BuildRowSection(
+          title: 'Illustration',
+          products: ProductRepository.byCategory(
+            ProductCategory.illustration,
+            limit: 7,
+          ),
+          showMore: true,
+        ),
+        SizedBox(height: 24),
       ],
     );
   }

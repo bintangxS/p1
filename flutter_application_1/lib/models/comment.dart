@@ -1,11 +1,4 @@
-import 'package:flutter_application_1/data/dummy_data.dart';
 import 'package:flutter_application_1/models/product.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_application_1/data/dummy_data.dart';
-import 'package:flutter_application_1/models/creator.dart';
-import 'package:flutter_application_1/pages/product_desc_page.dart';
-import '../../models/product.dart';
 
 class Comment {
   final String id;

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/data/user.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:flutter_application_1/pages/my_cart_page.dart';
+import 'package:flutter_application_1/pages/widget/notifier.dart';
 import 'package:flutter_application_1/pages/widget/shortcut.dart';
 
 class Appbar1 extends StatelessWidget implements PreferredSizeWidget {
@@ -13,9 +14,20 @@ class Appbar1 extends StatelessWidget implements PreferredSizeWidget {
       title: const Text('Fan works'),
       backgroundColor: Colors.blue[600],
       actions: [
-        IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.search, size: 30, fontWeight: FontWeight.w700),
+        ValueListenableBuilder(
+          valueListenable: isLightmode,
+          builder: (context, value, child) {
+            return IconButton(
+              onPressed: () {
+                isLightmode.value = !isLightmode.value;
+              },
+              icon: Icon(
+                isLightmode.value ? Icons.dark_mode : Icons.light_mode,
+                size: 30,
+                fontWeight: FontWeight.w700,
+              ),
+            );
+          },
         ),
         IconButton(
           onPressed: () {

@@ -22,12 +22,12 @@ final List<Store> stores = [
   Store(
     id: 's1',
     ownerId: 'c1',
-    storeName: 'Bstore',
+    storeName: 'Bintangstore',
     storeImage: 'assets/img/logowxs.png',
     bannerImage: 'assets/img/logowxs.png',
     storeBio: '''
-  'A cozy store for book lovers. From popular titles to hidden gems, we carefully pick products you’ll enjoy.
-  'Highly rated store offering premium selections with consistent quality and reliable service. Customer satisfaction is our priority.
+  A cozy store for book lovers. From popular titles to hidden gems, we carefully pick products you would enjoy.
+  Highly rated store offering premium selections with consistent quality and reliable service. Customer satisfaction is our priority.
 
 ''',
     rating: 4.9,
@@ -35,11 +35,13 @@ final List<Store> stores = [
   Store(
     id: 's2',
     ownerId: 'c2',
-    storeName: 'Sstore',
+    storeName: 'Starstore',
     storeImage: 'assets/img/profile_img.png',
     bannerImage: 'assets/img/profile_img.png',
-    storeBio:
-        'fafifhnfilgksdhklghnaldkfbhnslkhfdsjogjisdghsdjfdlfsdfjhsd;ghad;bfksafsajf;sbh',
+    storeBio: '''Curated books, trusted quality, and fast service.
+An independent store built by passionate readers. We focus on unique titles, creative works, and meaningful stories.
+
+''',
     rating: 4.8,
   ),
 ];

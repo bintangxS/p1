@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/data/dummy_data.dart';
 import 'package:flutter_application_1/models/product.dart';
 import 'package:flutter_application_1/pages/product_search_page.dart';
 import 'package:flutter_application_1/pages/widget/shortcut.dart';
@@ -81,7 +80,7 @@ class Category extends StatelessWidget {
       {
         'title': 'Manga',
         'Icon': Icons.menu_book,
-        'bg': Colors.amber,
+        'bg': Colors.blue,
         Category: ProductCategory.manga,
       },
       {
@@ -93,32 +92,26 @@ class Category extends StatelessWidget {
       {
         'title': 'Novel',
         'Icon': Icons.book,
-        'bg': Colors.red,
+        'bg': Colors.blue,
         Category: ProductCategory.novel,
       },
       {
         'title': 'Goods',
         'Icon': Icons.shopping_bag,
-        'bg': Colors.cyanAccent,
+        'bg': Colors.blue,
         Category: ProductCategory.goods,
       },
       {
         'title': '3D Models',
         'Icon': Icons.view_in_ar,
-        'bg': Colors.purpleAccent,
+        'bg': Colors.blue,
         Category: ProductCategory.asset3DModels,
       },
       {
         'title': 'Music',
         'Icon': Icons.music_note,
-        'bg': Colors.greenAccent,
+        'bg': Colors.blue,
         Category: ProductCategory.music,
-      },
-      {
-        'title': 'Audio goods',
-        'Icon': Icons.graphic_eq,
-        'bg': Colors.brown,
-        Category: ProductCategory.audiogoods,
       },
     ];
     return GridView.builder(
@@ -142,45 +135,3 @@ class Category extends StatelessWidget {
     );
   }
 }
-
-/*
-class Category extends StatelessWidget {
-  const Category({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: CategoryCard(
-                title: 'Manga',
-                icon: Icon(Icons.book_outlined),
-              ),
-            ),
-            SizedBox(width: 20),
-            Expanded(
-              child: CategoryCard(
-                title: 'Ilustrations',
-                icon: Icon(Icons.draw),
-              ),
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            Expanded(
-              child: CategoryCard(title: 'Novel', icon: Icon(Icons.book)),
-            ),
-            SizedBox(width: 20),
-            Expanded(
-              child: CategoryCard(title: 'Goods', icon: Icon(Icons.settings)),
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
-*/

@@ -1,5 +1,4 @@
 import 'package:flutter_application_1/models/comment.dart';
-import 'package:flutter_application_1/models/creator.dart';
 
 enum ProductCategory {
   illustration,
